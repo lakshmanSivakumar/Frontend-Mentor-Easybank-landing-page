@@ -13,8 +13,13 @@
     --White: hsl(0, 0%, 100%);
 }
 
-p, body {
+p {
     margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--White);
 }
 
 .container {
@@ -73,13 +78,13 @@ p, body {
 }
 
 .row-2 {
-    background-color: var(--Very-Light-Gray);
     padding: 10% 5% 15% 5%;
     width: 100%;
     background:
         url(./images/image-mockups.png) no-repeat center -170px,
         url(./images/bg-intro-mobile.svg) no-repeat center -50px;
     background-size: contain;
+    background-color: var(--Very-Light-Gray);
     position: relative;
 }
 
@@ -300,15 +305,16 @@ p, body {
 }
 
 .attribution { 
+    margin: 40px 0px;
     font-size: 11px; 
     text-align: center; 
     font-weight: 700;
+    letter-spacing: 2px; 
 }
 
 .attribution a { 
     color: var(--Bright-Cyan);
     text-decoration: none;
-    letter-spacing: 2px; 
 }
 
 @media screen and (min-width: 900px) {

@@ -218,7 +218,7 @@ body {
 .row-4-cards > div {
     background-color: var(--White);  
     border-radius: 10px;
-    width: 350px;
+    width: 300px;
 }
 
 .row-4-cards > div:nth-last-child(n+2) {
@@ -333,7 +333,7 @@ body {
     }
 
     .row-4 {
-        padding: 15% 5%;
+        padding: 15%;
     }
     
     .row-4-cards  {

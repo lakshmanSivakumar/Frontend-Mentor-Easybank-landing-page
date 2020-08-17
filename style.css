@@ -198,7 +198,7 @@ body {
 
 .row-4 {
     background-color: var(--Very-Light-Gray);
-    padding: 15% 10%;
+    padding: 15% 20%;
 }
 
 .row-4 > p {
@@ -217,7 +217,7 @@ body {
 .row-4-cards > div {
     background-color: var(--White);  
     border-radius: 10px;
-    width: 300px;
+    width: 100%;
 }
 
 .row-4-cards > div:nth-last-child(n+2) {
@@ -226,7 +226,6 @@ body {
 
 .row-4-cards > div > img {
     width: 100%;
-    height: 200px;
     border-radius: 6px 6px 0px 0px;
 }
 
@@ -316,6 +315,36 @@ body {
     text-decoration: none;
 }
 
+@media screen and (min-width: 790px) {
+
+    .row-4 {
+        padding: 10%;
+    }
+
+    .row-4-cards  {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .row-4-cards > div {
+        width: 300px;
+    }
+
+    .row-4-cards > div > img {
+        height: 200px;
+    }
+    
+    .row-4-cards > div:nth-last-child(n+2) {
+        margin-bottom: 0px;
+    }
+
+    .row-4-cards > div:nth-child(-n+2) {
+        margin-bottom: 40px;
+    }
+
+}
+
 @media screen and (min-width: 900px) {
 
     .hamburger, .modal-wrapper {
@@ -336,16 +365,7 @@ body {
     }
     
     .row-4-cards  {
-        flex-flow: row wrap;
         justify-content: space-evenly;
-    }
-
-    .row-4-cards > div:nth-last-child(n+2) {
-        margin-bottom: 0px;
-    }
-
-    .row-4-cards > div:nth-child(n+1) {
-        margin-bottom: 40px;
     }
 
 }
@@ -436,15 +456,16 @@ body {
     }
 
     .row-4-cards {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: stretch;
         justify-content: space-between;
         padding: 0;
     }
 
     .row-4-cards > div {
         width: 23%;
+    }
+
+    .row-4-cards > div:nth-child(-n+2) {
+        margin-bottom: 0px;
     }
   
     .row-5 {
